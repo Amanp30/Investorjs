@@ -1,0 +1,162 @@
+* {
+    padding: auto;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',
+        sans-serif;
+    scroll-behavior: smooth;
+}
+
+span.argument {
+    color: blue;
+    font-weight: bold;
+}
+
+.dividethis {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.nameoffunc {
+    margin: 1.5em 0 1em 0;
+    background: #0000ff0f;
+    padding: 1em;
+}
+
+.mgbtm,
+.args,
+.matic {
+    margin-bottom: 1em;
+}
+
+.args {
+    font-weight: bold;
+}
+
+li.removebullets {
+    list-style: none;
+    line-height: 1.6;
+}
+
+@media (min-width:600px) {
+    .toc ul {
+        overflow-y: scroll;
+        position: fixed;
+        height: 100vh;
+        background: beige;
+        list-style: none;
+        line-height: 2.6;
+        max-width: 100%;
+        padding: 2em;
+        padding-top: 0;
+        width: 15%;
+    }
+
+    .menubtn {
+        display: none;
+    }
+}
+
+.toc ul a {
+    text-decoration: none;
+    color: black;
+}
+
+#theblogpage p,
+#theblogpage div,
+#theblogpage ul {
+    margin-left: 2em;
+}
+
+img.logoji {
+    position: sticky;
+    top: 0;
+    width: 50px;
+}
+
+.logodiv {
+    margin: 0;
+    background: beige;
+    position: sticky;
+    top: 0;
+}
+
+#theblogpage h2:first-child {
+    margin-top: 0;
+}
+
+pre code.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 2em !important;
+}
+
+@media (max-width:600px) {
+
+    @keyframes slideUp {
+        0% {
+            transform: translateY(100%);
+        }
+
+        50% {
+            animation-delay: 4.0s ease-in-out;
+            transform: translateY(50%);
+        }
+
+        100% {
+
+            transform: translateY(0);
+        }
+    }
+
+    .menu {
+        animation: slideUp ease-in-out;
+    }
+
+    .toc.off {
+        display: none;
+    }
+
+    .menu-open {
+        overflow: hidden;
+    }
+
+    .toc.on {
+        display: block;
+        position: sticky;
+        top: 0;
+        bottom: 0;
+        animation: slideUp 2.0s ease-in-out;
+    }
+
+    .toc.on ul {
+        overflow-y: scroll;
+        position: fixed;
+        height: 100vh;
+        background: beige;
+        list-style: none;
+        line-height: 2.6;
+        max-width: 100%;
+        padding: 2em;
+        padding-top: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    button.menubtn {
+        background: #009688;
+        position: fixed;
+        color: white;
+        bottom: 20%;
+        right: 10%;
+        padding: .4em 1em;
+        border: 0;
+        border-radius: 2em;
+        box-shadow: 0 0 2em 0em #00968869;
+        z-index: 1;
+    }
+
+    .dividethis {
+        display: block;
+    }
+}
