@@ -401,6 +401,140 @@ function documentation() {
               "var operatingincomeCurrentYear = 2500000;\nvar operatingincomePreviousYear = 2000000; \ninvestor.operatingIncomeGrowth(operatingincomeCurrentYear, operatingincomePreviousYear);  \n// => 25.00%"
             )}
           />
+          <Codebox
+            name="advancesGrowth"
+            text="This function return operating income growth"
+            args={[
+              {
+                argument: "currentPeriod",
+                text: "",
+              },
+              {
+                argument: "previousPeriod",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              "var currentPeriod = 500000;\nvar previousPeriod = 450000; \ninvestor.advancesGrowth(currentPeriod, previousPeriod);  \n// => 11.11%"
+            )}
+          />
+          <Codebox
+            name="dividendPayoutRatio"
+            text="This function return dividend payout ratio"
+            args={[
+              {
+                argument: "dividendPerShare",
+                text: "",
+              },
+              {
+                argument: "EPS",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              "var dividendPerShare = 5;\nvar EPS = 98; \ninvestor.dividendPayoutRatio(dividendPerShare, EPS);  \n// => 5.10%"
+            )}
+          />
+          <Codebox
+            name="bookValue"
+            text="This function return dividend payout ratio"
+            args={[
+              {
+                argument: "acquisitionCost",
+                text: "",
+              },
+              {
+                argument: "depreciation",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              "var acquisitionCost = 1000;\nvar depreciation = 500; \ninvestor.bookValue(acquisitionCost , depreciation);  \n// => 500.00"
+            )}
+          />
+          <Codebox
+            name="bookValueperShare"
+            text="This function return book value per share"
+            args={[
+              {
+                argument: "totalEquity",
+                text: "",
+              },
+              {
+                argument: "preferredEquity",
+                text: "",
+              },
+              {
+                argument: "outstandingShares",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              "var totalEquity = 10;\nvar preferredEquity = 3;\nvar outstandingShares = 3.5; \ninvestor.bookValueperShare(totalEquity , preferredEquity , outstandingShares);  \n// => 2.00"
+            )}
+          />
+          <Codebox
+            name="operatingCostToAssetsRatio"
+            text="This function return operating cost to assets ratio"
+            args={[
+              {
+                argument: "operatingExpenses",
+                text: "",
+              },
+              {
+                argument: "averageAssets",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              "var operatingExpenses = 2769476;\nvar averageAssets = 129280571; \ninvestor..operatingCostToAssetsRatio(operatingExpenses , averageAssets);  \n// => 2.14%"
+            )}
+          />
+          <Codebox
+            name="costOfLiablity"
+            text="This function return cost of liablity"
+            args={[
+              {
+                argument: "interestOnBorrowingsDeposits",
+                text: "",
+              },
+              {
+                argument: "totalBorrowingsDeposits",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              "var interestOnBorrowingsDeposits = 480000; \nvar totalBorrowingsDeposits = 11000000; \ninvestor.costOfLiablity(interestOnBorrowingsDeposits, totalBorrowingsDeposits);  \n// => 4.36%"
+            )}
+          />
+          <Codebox
+            name="netInterestMargin"
+            text="This function return net interest margin"
+            args={[
+              {
+                argument: "interestEarned",
+                text: "",
+              },
+              {
+                argument: "interestPaid",
+                text: "",
+              },
+              {
+                argument: "totalAssets",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var interestEarned = 3;\nvar interestPaid = 1;\nvar totalAssets = 10;\ninvestor.netInterestMargin(interestEarned, interestPaid, totalAssets);  \n// => 20.00%"
+            )}
+          />
         </div>
       </div>
     </>
