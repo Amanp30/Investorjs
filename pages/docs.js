@@ -535,6 +535,385 @@ function documentation() {
               " var interestEarned = 3;\nvar interestPaid = 1;\nvar totalAssets = 10;\ninvestor.netInterestMargin(interestEarned, interestPaid, totalAssets);  \n// => 20.00%"
             )}
           />
+          <Codebox
+            name="yieldOnAdvances"
+            text="This function return yield on advances"
+            args={[
+              {
+                argument: "interestEarned",
+                text: "",
+              },
+              {
+                argument: "advances",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var interestEarned = 11872;\nvar advances = 88419;\ninvestor.yieldOnAdvances(interestEarned, advances);  \n// => 13.43%"
+            )}
+          />
+          <Codebox
+            name="ROA"
+            text="This function return Return on Assets"
+            args={[
+              {
+                argument: "netIncome",
+                text: "",
+              },
+              {
+                argument: "averageTotalAssets",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var netIncome = 2286;\nvar averageTotalAssets = 142898;\ninvestor.ROA(netIncome, averageTotalAssets);  \n// => 1.60%"
+            )}
+          />
+          <Codebox
+            name="EVREVENUE"
+            text="This function return enterprise value to revenue"
+            args={[
+              {
+                argument: "enterpriseValue",
+                text: "",
+              },
+              {
+                argument: "revenue",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var enterpriseValue = 50000000;\nvar revenue = 1000000;\ninvestor.EVREVENUE(enterpriseValue, revenue);  \n// => 50.00"
+            )}
+          />
+          <Codebox
+            name="enterpriseValue"
+            text="This function return enterprise value to revenue"
+            args={[
+              {
+                argument: "marketCap",
+                text: "",
+              },
+              {
+                argument: "netDebt",
+                text: "",
+              },
+            ]}
+            rtrn="Number"
+            example={mac(
+              " var marketCap = 50000000;\nvar netDebt = 1000000;\ninvestor.enterpriseValue(marketCap, netDebt);  \n// => 51000000"
+            )}
+          />
+          <Codebox
+            name="marketCap"
+            text="This function return Market Cap"
+            args={[
+              {
+                argument: "marketPrice",
+                text: "",
+              },
+              {
+                argument: "commonShares",
+                text: "",
+              },
+            ]}
+            rtrn="Number"
+            example={mac(
+              " var marketPrice = 50;\nvar commonShares = 1000000;\ninvestor.marketCap(marketPrice, commonShares);  \n// => 50000000"
+            )}
+          />
+          <Codebox
+            name="EVEBIT"
+            text="This function return enterprise value to EBIT"
+            args={[
+              {
+                argument: "enterpriseValue",
+                text: "",
+              },
+              {
+                argument: "EBIT",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var enterpriseValue = 20000;\nvar EBIT = 10000;\ninvestor.EVEBIT(enterpriseValue, EBIT);  \n// => 2.00"
+            )}
+          />
+          <Codebox
+            name="EVEBITDA"
+            text="This function return enterprise value to EBITDA"
+            args={[
+              {
+                argument: "enterpriseValue",
+                text: "",
+              },
+              {
+                argument: "EBITDA",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var enterpriseValue = 20000;\nvar EBITDA = 10000;\ninvestor.EVEBITDA(enterpriseValue, EBITDA);  \n// => 2.00"
+            )}
+          />
+
+          <Codebox
+            name="operatingCashFlowRatio"
+            text="This function return operating cashflow ratio"
+            args={[
+              {
+                argument: "operatingCashflow",
+                text: "",
+              },
+              {
+                argument: "totalLiablities",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var operatingCashflow = 150000;\nvar totalLiablities = 120000;\ninvestor.operatingCashFlowRatio(operatingCashflow , totalLiablities);  \n// => 1.25"
+            )}
+          />
+          <Codebox
+            name="CAPEXToOperatingCashRatio"
+            text="This function return capex to operating cash ratio"
+            args={[
+              {
+                argument: "capex",
+                text: "",
+              },
+              {
+                argument: "operatingCashflow",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var capex = 1000;\nvar operatingCashflow = 2000;\ninvestor.CAPEXToOperatingCashRatio(capex , operatingCashflow);  \n// => 0.50"
+            )}
+          />
+          <Codebox
+            name="timesInterestEarnedRatio"
+            text="This function return timesInterestEarnedRatio"
+            args={[
+              {
+                argument: "EBIT",
+                text: "",
+              },
+              {
+                argument: "interestExpense",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var EBIT = 500000;\nvar interestExpense = 50000;\ninvestor.timesInterestEarnedRatio(EBIT , interestExpense);  \n// => 10.00"
+            )}
+          />
+          <Codebox
+            name="assetTurnoverRatio"
+            text="This function return assets to turnover ratio"
+            args={[
+              {
+                argument: "netSales",
+                text: "",
+              },
+              {
+                argument: "totalAssets",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var netSales = 100000;\nvar totalAssets = 1200000;\ninvestor.assetTurnoverRatio(netSales , totalAssets);  \n// => 8.33%"
+            )}
+          />
+          <Codebox
+            name="debtRatio"
+            text="This function return debt ratio"
+            args={[
+              {
+                argument: "totalLiablities",
+                text: "",
+              },
+              {
+                argument: "totalAssets",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var totalLiablities = 4000;\nvar totalAssets = 15036;\ninvestor.debtRatio(totalLiablities , totalAssets);  \n// => 26.60%"
+            )}
+          />
+          <Codebox
+            name="equityRatio"
+            text="This function return equity ratio"
+            args={[
+              {
+                argument: "shareholdersEquity",
+                text: "",
+              },
+              {
+                argument: "totalAssets",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var shareholdersEquity = 65000;\nvar totalAssets = 100000;\ninvestor.equityRatio(shareholdersEquity , totalAssets);  \n// => 65.00%"
+            )}
+          />
+          <Codebox
+            name="debtToEquityRatio"
+            text="This function return debt to equity ratio"
+            args={[
+              {
+                argument: "totalDebt",
+                text: "",
+              },
+              {
+                argument: "shareholdersEquity",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var totalDebt = 107219;\nvar shareholdersEquity = 182055;\ninvestor.debtToEquityRatio(totalDebt , shareholdersEquity);  \n// => .59"
+            )}
+          />
+          <Codebox
+            name="netProfitMargin"
+            text="This function return net profit margin"
+            args={[
+              {
+                argument: "netProfit",
+                text: "",
+              },
+              {
+                argument: "revenue",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var netProfit = 30;\nvar revenue = 500;\ninvestor.netProfitMargin(netProfit, revenue);  \n// => 6.00%"
+            )}
+          />
+          <Codebox
+            name="operatingProfitMargin"
+            text="This function return operating profit margin"
+            args={[
+              {
+                argument: "operatingProfit",
+                text: "",
+              },
+              {
+                argument: "revenue",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var operatingProfit = 170000;\nvar revenue = 510000;\ninvestor.operatingProfitMargin(operatingProfit, revenue);  \n// => 33.33%"
+            )}
+          />
+          <Codebox
+            name="grossMarginRatio"
+            text="This function return gross margin ratio"
+            args={[
+              {
+                argument: "totalRevenue",
+                text: "",
+              },
+              {
+                argument: "COGS",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var totalRevenue = 102007;\nvar COGS = 39023;\ninvestor.grossMarginRatio(totalRevenue, COGS);  \n// => 61.74%"
+            )}
+          />
+          <Codebox
+            name="capitalEmployed"
+            text="This function return capital employed"
+            args={[
+              {
+                argument: "totalAssets",
+                text: "",
+              },
+              {
+                argument: "currentLiablities",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var totalAssets = 102007;\nvar currentLiablities = 39023;\ninvestor.capitalEmployed(totalAssets, currentLiablities);  \n// => 400000.00"
+            )}
+          />
+          <Codebox
+            name="ROCE"
+            text="This function return the return on capital employed"
+            args={[
+              {
+                argument: "Ebit",
+                text: "",
+              },
+              {
+                argument: "capitalEmployed",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var Ebit = 30000;\nvar capitalEmployed = 200000;\ninvestor.ROCE(ebit, capitalEmployed);  \n// => 15.00%"
+            )}
+          />
+          <Codebox
+            name="ROIC"
+            text="This function return the return on invested capital"
+            args={[
+              {
+                argument: "netIncome",
+                text: "",
+              },
+              {
+                argument: "investedCapital",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var netIncome = 3521 ;\nvar investedCapital = 541;\ninvestor.ROIC(netIncome, investedCapital);  \n// => 650.83%"
+            )}
+          />
+          <Codebox
+            name="ROE"
+            text="This function return the return on invested capital"
+            args={[
+              {
+                argument: "netIncome",
+                text: "",
+              },
+              {
+                argument: "shareholdersEquity",
+                text: "",
+              },
+            ]}
+            rtrn="String"
+            example={mac(
+              " var netIncome = 80000;\nvar shareholdersEquity = 80400;\ninvestor.ROE(netIncome, shareholdersEquity);  \n// => 99.50%"
+            )}
+          />
         </div>
       </div>
     </>
