@@ -492,7 +492,7 @@ function documentation() {
             ]}
             rtrn="String"
             example={mac(
-              "var operatingExpenses = 2769476;\nvar averageAssets = 129280571; \ninvestor..operatingCostToAssetsRatio(operatingExpenses , averageAssets);  \n// => 2.14%"
+              "var operatingExpenses = 2769476;\nvar averageAssets = 129280571; \ninvestor.operatingCostToAssetsRatio(operatingExpenses , averageAssets);  \n// => 2.14%"
             )}
           />
           <Codebox
